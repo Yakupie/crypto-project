@@ -1,3 +1,10 @@
+<img width="1898" height="896" alt="image" src="https://github.com/user-attachments/assets/3dc3c160-8bd7-4000-9509-7df959f0e9d9" />
+<img width="1895" height="895" alt="image" src="https://github.com/user-attachments/assets/1c85df1b-9dee-4146-921a-8791a6ecf75c" />
+<img width="1890" height="895" alt="image" src="https://github.com/user-attachments/assets/0f38e067-3a17-4740-aa04-a9beba527fdc" />
+<img width="1899" height="865" alt="image" src="https://github.com/user-attachments/assets/6e7020de-2117-421b-97b6-4c8c361f597c" />
+
+
+
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
