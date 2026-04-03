@@ -21,7 +21,7 @@
         <div class="headerRight">
             <div class="rightHeader">Değişim</div>
             <div class="rightText {isPositive ? 'positive' : 'negative'}">
-                {isPositive ? '+' : ''}{change}%
+                {isPositive ? '' : ''}{change}%
             </div>
         </div>
     </div>
@@ -49,7 +49,6 @@
     border: 1.5px solid rgba(130, 87, 229, 0.4);
     border-radius: 1.5rem;
     background: #0a0a0c;
-    box-shadow: 0 10px 10px rgba(130, 87, 229, 0.15);
     display: flex;
     flex-direction: column;
     overflow: hidden;

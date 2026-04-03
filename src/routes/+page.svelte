@@ -5,6 +5,12 @@ import Container2 from '$lib/components/Container2.svelte';
 import Footer from '$lib/components/Footer.svelte';
 </script>
 
+<svelte:head>
+    <title>CryptoStats</title>
+    <meta name="description" content="Python ile anlık kripto para verilerini analiz edin. API entegrasyonu ve veri çekme teknikleriyle Bitcoin, Ethereum ve altcoin piyasasını yakından takip edin." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</svelte:head>
+
 <div class="container">
     <Navbar/>
     <div class="hero-wrapper">
@@ -29,7 +35,7 @@ import Footer from '$lib/components/Footer.svelte';
     .container {
         width: 100%;
         height: 95vh;
-        background: url("../lib/assets/background.jpg") rgba(0,0,0,0.8);
+        background: url("../lib/assets/background.webp") rgba(0,0,0,0.8);
         background-position: center;
         background-size: cover;
         background-blend-mode: darken;

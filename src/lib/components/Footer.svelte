@@ -29,7 +29,7 @@
     <div class="footer-bottom">
       <div class="logo-area">
         <div class="logo-placeholder">
-          <img src="/logo.png" alt="Logo" />
+          <img src="/logo.webp" alt="Logo" />
         </div>
       </div>
       

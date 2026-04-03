@@ -2,7 +2,7 @@
   let { 
     coinName = "Bitcoin", 
     coinSymbol = "BTC", 
-    coinImage = "/btc.png",
+    coinImage = "/btc.webp",
     title = "Bitcoin Nedir?", 
     description = "Bitcoin, 2008 yılında Satoshi Nakamoto takma adını kullanan kişi veya grup tarafından geliştirilen, merkezi bir otoriteye veya bankaya bağlı olmayan, uçtan uca şifreli, açık kaynaklı bir dijital para birimidir. Geleneksel para birimlerinin aksine, Bitcoin'in üretimi ve transferi Blockchain (Blok Zinciri) adı verilen dağıtık bir defter teknolojisi ile şeffaf bir şekilde yönetilir."
   } = $props();
@@ -48,7 +48,6 @@
         border: 1.5px solid rgba(130, 87, 229, 0.3);
         border-radius: 1.5rem;
         padding: clamp(15px, 4vw, 30px);
-        box-shadow: 0 10px 10px rgba(130, 87, 229, 0.1);
         font-family: 'Inter', sans-serif;
         margin: 20px auto;
         transition: all 0.3s ease;
