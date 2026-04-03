@@ -1,9 +1,8 @@
 <script>
-  // Svelte 5 Runes yapısı ile dışarıdan veri alıyoruz
   let { 
     coinName = "Bitcoin", 
     coinSymbol = "BTC", 
-    coinImage = "/btc.png", // static klasöründeki btc.png
+    coinImage = "/btc.png",
     title = "Bitcoin Nedir?", 
     description = "Bitcoin, 2008 yılında Satoshi Nakamoto takma adını kullanan kişi veya grup tarafından geliştirilen, merkezi bir otoriteye veya bankaya bağlı olmayan, uçtan uca şifreli, açık kaynaklı bir dijital para birimidir. Geleneksel para birimlerinin aksine, Bitcoin'in üretimi ve transferi Blockchain (Blok Zinciri) adı verilen dağıtık bir defter teknolojisi ile şeffaf bir şekilde yönetilir."
   } = $props();
@@ -39,21 +38,21 @@
 </div>
 
 <style>
-    /* Projenin genel yazı tiplerini kullanıyoruz */
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap');
 
     .info-card {
         display: flex;
-        width: 100%;
-        max-width: 1000px; /* Dikdörtgen genişliği */
-        background: #0a0a0c; /* Koyu arka plan */
-        border: 1.5px solid rgba(130, 87, 229, 0.3); /* Mor kenarlık */
+        width: 95%;
+        max-width: 1000px;
+        background: #0a0a0c;
+        border: 1.5px solid rgba(130, 87, 229, 0.3);
         border-radius: 1.5rem;
-        padding: 25px;
-        box-shadow: 0 10px 10px rgba(130, 87, 229, 0.1); /* Hafif mor gölge */
+        padding: clamp(15px, 4vw, 30px);
+        box-shadow: 0 10px 10px rgba(130, 87, 229, 0.1);
         font-family: 'Inter', sans-serif;
-        margin: 20px auto; /* Ortalamak için */
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin: 20px auto;
+        transition: all 0.3s ease;
+        gap: 20px;
     }
 
     .info-card:hover {
@@ -62,18 +61,16 @@
         border-color: rgba(130, 87, 229, 0.6);
     }
 
-    /* Sol Kısım: Logo */
     .card-left {
         display: flex;
-        align-items: flex-start; /* Logoyu yukarıda tut */
-        padding-right: 25px;
-        border-right: 1px solid rgba(255, 255, 255, 0.05); /* Ayırıcı çizgi */
+        align-items: flex-start;
+        flex-shrink: 0;
     }
 
     .coin-image-container {
-        width: 80px;
-        height: 80px;
-        border-radius: 100%;
+        width: clamp(60px, 10vw, 85px);
+        height: clamp(60px, 10vw, 85px);
+        border-radius: 50%;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -85,47 +82,41 @@
     .coin-logo {
         width: 100%;
         height: 100%;
-        object-fit: contain; /* Logoyu kutuya sığdırır */
-        padding: 5px; /* Logoya nefes aldır */
+        object-fit: contain;
+        padding: 8px;
     }
 
-    .coin-placeholder {
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, #8257e5 0%, #3b0066 100%);
-    }
-
-    /* Ana Kısım: İçerik */
     .card-main {
-        flex: 1; /* Kalan alanı doldur */
-        padding-left: 25px;
+        flex: 1;
         display: flex;
         flex-direction: column;
+        min-width: 0;
     }
 
     .card-header {
         display: flex;
         align-items: center;
-        justify-content: space-between; /* Başlık ve Tag'i ayır */
+        justify-content: space-between;
         margin-bottom: 15px;
+        gap: 10px;
     }
 
     .card-title {
         font-family: 'Plus Jakarta Sans', sans-serif;
-        font-size: 1.8rem;
+        font-size: clamp(1.2rem, 3vw, 1.8rem); 
         font-weight: 800;
         color: #ffffff;
         margin: 0;
     }
 
     .coin-tag {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 700;
-        color: #a885f7; /* Açık mor */
+        color: #a885f7;
         background: rgba(130, 87, 229, 0.1);
-        padding: 6px 12px;
-        border-radius: 20px;
-        text-transform: uppercase;
+        padding: 4px 10px;
+        border-radius: 12px;
+        white-space: nowrap;
     }
 
     .card-body {
@@ -133,37 +124,75 @@
     }
 
     .card-description {
-        font-size: 1rem;
-        line-height: 1.6; /* Okunabilirliği artırır */
-        color: #b0b0b8; /* Hafif gri yazı */
+        font-size: clamp(0.9rem, 2vw, 1rem);
+        line-height: 1.6;
+        color: #b0b0b8;
         margin: 0;
-        text-align: justify; /* Metni iki yana yasla */
+        text-align: left;
     }
 
-    /* Alt Kısım: Buton */
     .card-footer {
         display: flex;
-        justify-content: flex-end; /* Butonu sağa yasla */
-        margin-top: auto; /* İçerik azsa bile altta kal */
+        justify-content: flex-end;
+        margin-top: auto;
     }
 
     .learn-more {
-        background: #8257e5; /* Mor buton */
+        background: #8257e5;
         color: #ffffff;
         border: none;
         padding: 12px 24px;
         border-radius: 10px;
         font-family: 'Plus Jakarta Sans', sans-serif;
         font-weight: 700;
-        font-size: 0.95rem;
+        font-size: clamp(0.85rem, 2vw, 0.95rem);
         cursor: pointer;
-        transition: 0.3s ease;
-        box-shadow: 0 5px 15px rgba(130, 87, 229, 0.3);
+        transition: all 0.3s ease;
+        width: auto;
     }
 
     .learn-more:hover {
         background: #996dff;
         transform: translateY(-2px);
         box-shadow: 0 8px 20px rgba(130, 87, 229, 0.4);
+    }
+
+    @media (max-width: 640px) {
+        .info-card {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card-left {
+            padding-right: 0;
+            margin-bottom: 10px;
+        }
+
+        .card-header {
+            flex-direction: column;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .card-main {
+            padding-left: 0;
+            width: 100%;
+        }
+
+        .card-footer {
+            justify-content: center;
+            width: 100%;
+        }
+
+        .learn-more {
+            width: 100%;
+            max-width: 250px;
+        }
+        
+        .card-description {
+            text-align: center;
+        }
     }
 </style>

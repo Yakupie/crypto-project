@@ -88,4 +88,13 @@ import Footer from '$lib/components/Footer.svelte';
     /* Parıltının daha iyi görünmesi için gerekirse ekleyebilirsin */
     background-blend-mode: screen; 
 }
+.container3{
+    height: 50vh;
+    width: 100%;
+}
+@media (max-width: 1000px) {
+    .container2{
+        height: 235vh;
+    }
+}
 </style>

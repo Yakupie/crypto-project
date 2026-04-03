@@ -71,29 +71,25 @@ import { cryptoData } from "../../store";
 }
 .header {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 800; /* Daha belirgin olması için kalınlığı artırdık */
+  font-weight: 800;
   font-size: 3.5rem;
   
-  /* 1. Renk Geçişini (Gradient) Tanımlıyoruz */
   background: linear-gradient(
     to right, 
-    #8257e5, /* Ana morun */
-    #996dff, /* Açık mor */
-    #3b0066, /* Koyu mor */
-    #8257e5  /* Döngü için tekrar ana mor */
+    #8257e5,
+    #996dff,
+    #3b0066,
+    #8257e5
   );
-  
-  /* 2. Gradient'i sadece yazıya hapset */
-  background-size: 200% auto; /* Animasyonun akması için genişliği artırdık */
+
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   
-  /* 3. Animasyonu Bağla */
   animation: shine 1s linear infinite;
 }
 
-/* 4. Animasyonun Hareket Kuralları */
 @keyframes shine {
   to {
     background-position: 200% center;
@@ -115,5 +111,27 @@ import { cryptoData } from "../../store";
 .cardWrapper{
   height: 30%;
   width: 100%;
+}
+@media (max-width: 1000px) {
+    .cryptoArea{
+      display: flex;
+      flex-direction: column;
+      gap: 2%;
+    }
+    .containerWrapper{
+      height: 250vh;
+    }
+    .cardWrapper{
+      height: 50vh;
+    }
+    .container{
+      height: 300vh;
+    }
+    .header{
+      font-size: 2rem;
+    }
+    .cryptoWrapper{
+      height: 70%;
+    }
 }
 </style>

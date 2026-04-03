@@ -18,7 +18,7 @@
         <h3 class="title">Bağlantılar</h3>
         <nav class="footer-nav">
           <a href="/">Ana Sayfa</a>
-          <a href="https://github.com" target="_blank">GitHub Repo</a>
+          <a href="https://github.com/Yakupie/crypto-project" target="_blank">GitHub Repo</a>
           <a href="https://www.firat.edu.tr/tr" target="_blank">Fırat Üniversitesi</a>
         </nav>
       </div>
@@ -45,9 +45,9 @@
 
   .footer-container {
     width: 100%;
-    background: #0a0a0c; /* Senin bileşeninle aynı arka plan */
+    background: #0a0a0c;
     padding: 60px 20px 30px 20px;
-    border-top: 1.5px solid rgba(130, 87, 229, 0.3); /* Üst kısma mor bir sınır */
+    border-top: 1.5px solid rgba(130, 87, 229, 0.3);
     font-family: 'Inter', sans-serif;
     color: #ffffff;
     box-shadow: 0 -10px 30px rgba(130, 87, 229, 0.05);
@@ -76,7 +76,7 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 800;
     font-size: 1.2rem;
-    color: #a885f7; /* Senin tasarımdaki mor tonu */
+    color: #a885f7;
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -89,7 +89,6 @@
     margin-bottom: 20px;
   }
 
-  /* Açık Kaynak Rozeti */
   .status-badge {
     display: inline-flex;
     align-items: center;
@@ -99,7 +98,7 @@
     border-radius: 50px;
     font-size: 0.85rem;
     font-weight: 700;
-    color: #4ade80; /* Açık kaynak için yeşil vurgu */
+    color: #4ade80;
   }
 
   .pulse-icon {
@@ -132,7 +131,7 @@
 
   .footer-nav a:hover {
     color: #ffffff;
-    padding-left: 5px; /* Hafif bir kayma efekti */
+    padding-left: 5px;
   }
 
   .divider {
@@ -144,7 +143,7 @@
   .footer-bottom {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end; /* Logoyu ve copyright'ı en alta yaslar */
+    align-items: flex-end
   }
 
   .logo-placeholder {

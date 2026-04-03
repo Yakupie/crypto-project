@@ -19,8 +19,8 @@
     <div class="navbarUl desktop-only">
         <ul>
             <li><a href="#1">Ana Sayfa</a></li>
-            <li><a href="#2">Trade</a></li>
             <li><a href="#4">Öğren</a></li>
+            <li><a href="#4">Kripto</a></li>
             <li><a href="#5">Destek</a></li>
         </ul>
     </div>
