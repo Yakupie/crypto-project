@@ -75,16 +75,16 @@
     }
 
     .primary-btn {
-        background: #8257e5;
+        padding: 15px 35px;
         color: white;
         border: none;
-        padding: 15px 35px;
         border-radius: 10px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         cursor: pointer;
         transition: 0.3s;
         box-shadow: 0 10px 20px rgba(130, 87, 229, 0.3);
+        background: #8257e5;
     }
 
     .secondary-btn {
